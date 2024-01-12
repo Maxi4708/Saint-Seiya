@@ -1,0 +1,113 @@
+@keyframes cambioColor {
+    0% { color: #FFD700; } /* Inicio de la animación, color dorado */
+    25% { color: #FF6347; } /* Cambio de color a un tono naranja */
+    50% { color: #7FFFD4; } /* Cambio de color a un tono verde claro */
+    75% { color: #4169E1; } /* Cambio de color a un tono azul */
+    100% { color: #FFD700; } /* Volver al color dorado al final de la animación */
+  }
+  
+  h1 {
+    font-size: 36px;
+    margin: 10px 0;
+    text-shadow: 1px 1px 1px black;
+    animation: cambioColor 6s infinite; /* Duración de la animación: 6 segundos, repetición infinita */
+  }
+
+
+body {
+    font-family: 'Anime Ace', sans-serif;
+    background-color: #0D1F2D;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+}
+
+body::before {
+    content: "";
+    background-image: url('images/Fondo.jpg'); /* Reemplaza 'tu-imagen.jpg' con la ruta de tu imagen */
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(5px); /* Ajusta el valor de 'blur' según la cantidad de desenfoque deseada */
+    z-index: -1; /* Coloca este elemento detrás de todo el contenido */
+}
+
+body {
+    font-family: 'Anime Ace', sans-serif;
+    background-color: transparent; /* Haz el fondo transparente para que el efecto de desenfoque sea visible */
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+}
+
+
+#principal {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    margin: 10px 0;
+}
+
+.subtitulo {
+    font-style: italic;
+}
+
+#characters-info {
+    margin-bottom: 30px;
+}
+
+.characters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.personajes-item {
+    width: 45%;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #1F3250;
+    border-radius: 5px;
+}
+
+h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+p {
+    font-size: 16px;
+    text-shadow: 1px 1px 1px black;
+}
+
+#Read-More {
+    text-align: center;
+}
+
+#SaintSeita-link {
+    color: #FFD700;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#SaintSeita-link:hover {
+    text-decoration: underline;
+}
+
